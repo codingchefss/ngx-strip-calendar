@@ -8,7 +8,7 @@ import { startOfMonth, endOfMonth, eachDayOfInterval, subMonths, addMonths, isSa
   standalone: true,
   imports: [CommonModule],
   templateUrl: './strip-calendar.html',
-  styleUrls: ['./strip.calendar.scss']
+  styleUrls: ['./strip-calendar.scss'],
 })
 export class StripCalendarComponent implements OnInit {
   currentMonth: any = undefined;
