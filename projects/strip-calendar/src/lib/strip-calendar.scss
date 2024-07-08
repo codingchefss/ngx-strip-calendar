@@ -1,0 +1,86 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.icons {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    .icon-btn {
+        button {
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+        }
+    }
+
+    .date {
+        width: 150px;
+    }
+
+
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.arrows {
+    width: 30px;
+    text-align: center;
+}
+
+.dates {
+    overflow-x: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    position: relative;
+
+    .date-box {
+        flex: 0 0 30px;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        height: 30px;
+        cursor: pointer;
+
+
+        .day {
+            font-size: 12px;
+        }
+
+        .date {
+            font-size: 18px;
+        }
+    }
+
+    .selected-box {
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}

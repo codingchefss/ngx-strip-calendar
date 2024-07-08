@@ -1,0 +1,42 @@
+<div class="d-flex align-items-center justify-content-center icons">
+
+    <div class="icon-btn">
+      <button (click)="goToPreviousMonth()">
+        {{'<'}} </button>
+    </div>
+  
+    <div class="date d-flex align-items-center justify-content-center">
+      @if(currentMonth){
+      {{currentMonth[0] | date: 'MMM y'}}
+      }
+    </div>
+  
+    <div class="icon-btn">
+      <button (click)="goToNextMonth()">
+        {{'>'}}
+      </button>
+    </div>
+  </div>
+  
+  @if(currentMonth.length > 0){
+  <div class="d-flex align-items-center justify-content-space-evenly">
+  
+    <div class="arrows arr1">
+      p
+    </div>
+  
+    <div class="d-flex align-items-center dates no-scrollbar">
+      @for(date of currentMonth; track $index){
+      <div class="date-box d-flex flex-column align-items-center justify-content-space-evenly"
+        [ngClass]="{'selected-box' : isCurrentDate(date)}" (click)="onChange(date)" [id]="'target'+$index">
+        <div class="day">{{ date | date: 'EEE' }}</div>
+        <div class="date">{{ date | date: 'dd' }}</div>
+      </div>
+      }
+    </div>
+  
+    <div class="arrows arr2">
+      n
+    </div>
+  </div>
+  }

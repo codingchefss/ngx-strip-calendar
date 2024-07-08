@@ -3,5 +3,41 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "strip-calendar": {
+      "projectType": "library",
+      "root": "projects/strip-calendar",
+      "sourceRoot": "projects/strip-calendar/src",
+      "prefix": "dev",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/strip-calendar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/strip-calendar/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/strip-calendar/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/strip-calendar/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
