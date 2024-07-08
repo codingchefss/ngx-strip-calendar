@@ -1,27 +1,89 @@
-# StripCalendarWorkspace
+<h1 align="center">ngx-strip-calendar</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Saqib92/ngx-strip-calendar#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/Saqib92/ngx-strip-calendar/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/Saqib92/ngx-strip-calendar/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## 📝 Table of Contents
 
-## Development server
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Author](#author)
+- [Contributing](#contributing)
+- [Show your support](#support)
+- [License](#license)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✅ Prerequisites <a name = "prerequisites"></a>
 
-## Code scaffolding
+The current version of the library is compatible with Ionic 7+.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ⬇️ Install <a name = "install"></a>
 
-## Build
+Using npm
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+npm install ngx-strip-calendar --save
+```
 
-## Running unit tests
+Using yarn
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+yarn add ngx-strip-calendar
+```
 
-## Running end-to-end tests
+## 🛠 Setup <a name = "setup"></a>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Once installed you need to import it directly in component, you will be using it in:
 
-## Further help
+```js
+import { StripCalendarComponent } from 'strip-calendar';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@Component({
+  ...
+  imports: [StripCalendarComponent, ...],
+  ...
+})
+```
+
+## Usage <a name = "usage"></a>
+
+Include the component on page template, like the example below:
+
+```
+  <ngx-strip-calendar
+  (onDateChange)="yourFunction($event)"></ngx-strip-calendar>
+```
+
+### Events
+
+- yourFunction: `EventEmitter<string>, called whenever you change a date value`
+
+## Author <a name = "author"></a>
+
+👤 **Najam Us Saqib**
+
+- Github: [@saqib92](https://github.com/saqib92)
+
+## 🤝 Contributing <a name = "contributing"></a>
+
+Contributions, issues and feature requests are welcome!<br />
+Feel free to check [issues page](https://github.com/saqib92/ngx-strip-calendar/issues).
+
+## Show your support <a name = "support"></a>
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License <a name = "license"></a>
+
+Copyright © 2024 [Saqb92](https://github.com/saqib92).<br />
+This project is [MIT](https://github.com/saqib92/ngx-strip-calendar/blob/master/LICENSE) licensed.
