@@ -46,7 +46,7 @@ yarn add ngx-strip-calendar
 Once installed you need to import it directly in component, you will be using it in:
 
 ```js
-import { StripCalendarComponent } from 'strip-calendar';
+import { StripCalendarComponent } from 'ngx-strip-calendar';
 
 @Component({
   ...
@@ -66,7 +66,7 @@ Include the component on page template, like the example below:
 
 ### Events
 
-- yourFunction: `EventEmitter<string>, called whenever you change a date value`
+- onDateChange: `EventEmitter<string>, called whenever you change a date value`
 
 ## Author <a name = "author"></a>
 

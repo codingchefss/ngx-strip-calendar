@@ -1,42 +1,46 @@
 <div class="d-flex align-items-center justify-content-center icons">
 
-    <div class="icon-btn">
-      <button (click)="goToPreviousMonth()">
-        {{'<'}} </button>
-    </div>
-  
-    <div class="date d-flex align-items-center justify-content-center">
-      @if(currentMonth){
+  <div class="icon-btn">
+    <button (click)="goToPreviousMonth()">
+      {{'<'}} </button>
+  </div>
+
+  <div class="date d-flex align-items-center justify-content-center">
+
+    <ng-container *ngIf="currentMonth">
       {{currentMonth[0] | date: 'MMM y'}}
-      }
-    </div>
-  
-    <div class="icon-btn">
-      <button (click)="goToNextMonth()">
-        {{'>'}}
-      </button>
-    </div>
+    </ng-container>
+
   </div>
-  
-  @if(currentMonth.length > 0){
+
+  <div class="icon-btn">
+    <button (click)="goToNextMonth()">
+      {{'>'}}
+    </button>
+  </div>
+</div>
+
+
+<ng-container *ngIf="currentMonth.length > 0">
   <div class="d-flex align-items-center justify-content-space-evenly">
-  
-    <div class="arrows arr1">
-      p
+
+    <div class="arrows arr1" (click)="smoothScroll('left', 210)">
+      {{'<'}} </div>
+
+        <div #dateCon class="d-flex align-items-center dates no-scrollbar">
+
+          <ng-container *ngFor="let date of currentMonth; index as i;">
+            <div class="date-box d-flex flex-column align-items-center justify-content-space-evenly"
+              [ngClass]="{'selected-box' : isCurrentDate(date)}" (click)="onChange(date)" [id]="'target'+i">
+              <div class="day">{{ date | date: 'EEE' }}</div>
+              <div class="date">{{ date | date: 'dd' }}</div>
+            </div>
+          </ng-container>
+
+        </div>
+
+        <div class="arrows arr2" (click)="smoothScroll('right', 210)">
+          {{'>'}}
+        </div>
     </div>
-  
-    <div class="d-flex align-items-center dates no-scrollbar">
-      @for(date of currentMonth; track $index){
-      <div class="date-box d-flex flex-column align-items-center justify-content-space-evenly"
-        [ngClass]="{'selected-box' : isCurrentDate(date)}" (click)="onChange(date)" [id]="'target'+$index">
-        <div class="day">{{ date | date: 'EEE' }}</div>
-        <div class="date">{{ date | date: 'dd' }}</div>
-      </div>
-      }
-    </div>
-  
-    <div class="arrows arr2">
-      n
-    </div>
-  </div>
-  }
+</ng-container>
