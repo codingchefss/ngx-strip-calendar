@@ -1,13 +1,13 @@
 <h1 align="center">ngx-strip-calendar</h1>
 <p>
   <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Saqib92/ngx-strip-calendar#readme">
+  <a href="https://github.com/codingchefss/ngx-strip-calendar#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
-  <a href="https://github.com/Saqib92/ngx-strip-calendar/graphs/commit-activity">
+  <a href="https://github.com/codingchefss/ngx-strip-calendar/graphs/commit-activity">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
   </a>
-  <a href="https://github.com/Saqib92/ngx-strip-calendar/blob/master/LICENSE">
+  <a href="https://github.com/codingchefss/ngx-strip-calendar/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
 </p>
@@ -25,7 +25,7 @@
 
 ## ✅ Prerequisites <a name = "prerequisites"></a>
 
-The current version of the library is compatible with Ionic 7+.
+The current version of the library is compatible with Angular 17+ and Ionic 7+.
 
 ## ⬇️ Install <a name = "install"></a>
 
@@ -70,14 +70,14 @@ Include the component on page template, like the example below:
 
 ## Author <a name = "author"></a>
 
-👤 **Najam Us Saqib**
+👤 **CodingChefs**
 
-- Github: [@saqib92](https://github.com/saqib92)
+- Github: [@codingchefss](https://github.com/codingchefss)
 
 ## 🤝 Contributing <a name = "contributing"></a>
 
 Contributions, issues and feature requests are welcome!<br />
-Feel free to check [issues page](https://github.com/saqib92/ngx-strip-calendar/issues).
+Feel free to check [issues page](https://github.com/codingchefss/ngx-strip-calendar/issues).
 
 ## Show your support <a name = "support"></a>
 
@@ -85,5 +85,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License <a name = "license"></a>
 
-Copyright © 2024 [Saqb92](https://github.com/saqib92).<br />
-This project is [MIT](https://github.com/saqib92/ngx-strip-calendar/blob/master/LICENSE) licensed.
+Copyright © 2025 [CodingChefs](https://github.com/codingchefss).<br />
+This project is [MIT](https://github.com/codingchefss/ngx-strip-calendar/blob/master/LICENSE) licensed.
