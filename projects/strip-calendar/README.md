@@ -25,7 +25,7 @@
 
 ## ✅ Prerequisites <a name = "prerequisites"></a>
 
-The current version of the library is compatible with Angular 17+ and Ionic 7+.
+The current version of the library is compatible with Angular 20+ and Ionic 8+.
 
 ## ⬇️ Install <a name = "install"></a>
 
@@ -85,5 +85,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License <a name = "license"></a>
 
-Copyright © 2025 [CodingChefs](https://github.com/codingchefss).<br />
+Copyright © 2025 [CodingChefs](https://codingchefs.com/).<br />
 This project is [MIT](https://github.com/codingchefss/ngx-strip-calendar/blob/master/LICENSE) licensed.

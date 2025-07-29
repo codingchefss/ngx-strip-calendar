@@ -1,7 +1,7 @@
 {
   "name": "ngx-strip-calendar",
-  "version": "0.0.4",
-  "description": "Angular 17+ Strip Calendar component - ngx-strip-calendar",
+  "version": "1.0.1",
+  "description": "Angular 20+ Strip Calendar component - ngx-strip-calendar",
   "author": "CodingChefs",
   "license": "MIT",
   "repository": {
@@ -12,8 +12,9 @@
     "url": "https://github.com/codingchefss/ngx-strip-calendar/issues"
   },
   "keywords": [
-    "angular",
+     "angular",
     "ngx-strip-calendar",
+    "ngx strip calendar",
     "angular-calendar",
     "ngx",
     "ngx-strip",
@@ -24,6 +25,8 @@
     "component",
     "angular 17",
     "angular 18",
+    "angular 19",
+    "angular 20",
     "ionic Framework",
     "ionic",
     "ionic 5",
