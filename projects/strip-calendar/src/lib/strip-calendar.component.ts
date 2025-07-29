@@ -4,11 +4,10 @@ import { startOfMonth, endOfMonth, eachDayOfInterval, subMonths, addMonths, isSa
 
 
 @Component({
-  selector: 'ngx-strip-calendar',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './strip-calendar.html',
-  styleUrls: ['./strip-calendar.scss']
+    selector: 'ngx-strip-calendar',
+    imports: [CommonModule],
+    templateUrl: './strip-calendar.html',
+    styleUrls: ['./strip-calendar.scss']
 })
 export class StripCalendarComponent implements OnInit {
   @ViewChild('dateCon') datesContainer!: ElementRef;
